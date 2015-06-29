@@ -26,7 +26,8 @@
     "autoload": {
         "psr-4": {
             "MatthiasMullie\\Minify\\": "src/"
-        }
+        },
+        "classmap": ["src/BC"]
     },
     "bin": [
         "bin/minifycss",

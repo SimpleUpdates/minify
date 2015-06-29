@@ -1,5 +1,5 @@
 <?php
-namespace MatthiasMullie\Minify;
+namespace MatthiasMullie\Minify\Target;
 
 /**
  * Please report bugs on https://github.com/matthiasmullie/minify/issues
@@ -9,6 +9,10 @@ namespace MatthiasMullie\Minify;
  * @copyright Copyright (c) 2012, Matthias Mullie. All rights reserved.
  * @license MIT License
  */
-class Exception extends \Exception
+interface Target
 {
+    /**
+     * @param string $content The minified data.
+     */
+    public function store($content);
 }
