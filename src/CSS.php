@@ -614,7 +614,7 @@ class CSS extends Minify
     protected function stripComments()
     {
         if ($this->leavePreservedComments) {
-            $this->registerPattern('/\/\*(?!(!.*?\*\/|.*?@license.*?\*\/|.*?@preserve.*?\*\/)).*?\*\//s', '');
+            $this->registerPattern('/\/\*(?!(#.*?\*\/|.*?@license.*?\*\/|.*?@preserve.*?\*\/)).*?\*\//s', '');
         } else {
             $this->registerPattern('/\/\*.*?\*\//s', '');
         }
